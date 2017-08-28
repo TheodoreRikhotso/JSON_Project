@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/one"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tools"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="40dp"
+        app:theme="@style/ToolbarColoredBackArrow"
+        app:titleTextColor="@android:color/white"></android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageVi"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:src="@drawable/tenth_back"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+    <!--<TextView-->
+    <!--android:id="@+id/tvDisplay"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Student Info..."-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btnVeiw"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:onClick="veiwAll"-->
+    <!--android:text="Load Grade" />-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignBottom="@+id/linearLayout"
+        android:id="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="56dp"
+            android:layout_height="527dp"
+            android:layout_gravity="bottom"
+            android:background="#caa128eb"
+            android:onClick="onSelectedFragment"
+            android:padding="40dp"
+         android:gravity="ri"
+            android:textSize="50dp"
+            android:text="Login" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/fragment_placeholder"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        android:orientation="horizontal">
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentStart="true">
+
+        <Button
+
+            android:id="@+id/btnSign"
+            android:layout_width="56dp"
+            android:layout_height="4000dp"
+            android:layout_gravity="bottom"
+            android:background="#cc36accd"
+            android:onClick="onSelectedFragment"
+
+            android:text="Button" />
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
